@@ -1,0 +1,136 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  background-color: #efefef;
+  font-family: TruenoSBd, Arial, Helvetica, sans-serif;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+h1,
+h2 {
+  color: #000;
+  font-family: TruenoRg, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.3em;
+  background-color: rgb(0,73,114);
+  padding: 15px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.7em;
+  text-align: center;
+}
+
+header .first-header {
+  background-color: #0fa6df;
+}
+
+footer {
+  text-align: center;
+  background-color: #323232;
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 20px);
+  padding: 10px;
+  height: 30px;
+  color: white;
+  margin: 0;
+  font-size: 0.8em;
+}
+
+main.type-menu {
+  background-color: #fff;
+  width: 60%;
+  margin: 3.5% auto;
+  padding-top: 5px;
+  border-radius: 10px;
+}
+
+main.topic-selection {
+  background-color: #fff;
+  width: 80%;
+  margin: 3.5% auto;
+  padding-top: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.type-selection {
+  padding: 20px 10px;
+  display: inline-block;
+  width: calc(50% - 20px);
+  text-align: center;
+  transition-duration: 500ms;
+}
+
+.type-selection p {
+  font-size: 1.2em;
+  transition-duration: 500ms;
+}
+
+.type-selection img {
+  transition-duration: 500ms;
+}
+
+.type-selection:hover > img {
+  transform: scale(1.2);
+  transition-duration: 500ms;
+}
+
+.type-selection:hover > p {
+  transform: scale(1.2);
+  transition-duration: 500ms;
+}
+
+a {
+  text-decoration: none;
+  color: #0fa6df;
+}
+
+.topic {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: TruenoRg, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.topic span {
+  margin-left: 10px;
+  font-size: 1.2em;
+  transition-duration: 500ms;
+}
+
+.topic img {
+  transition-duration: 500ms;
+}
+
+.topic:hover > span {
+  transform: scale(1.1) translateX(15px);
+  transition-duration: 500ms;
+}
+
+.topic:hover > img {
+  transform: scale(1.2);
+  transition-duration: 500ms;
+}
+
+.return-button {
+  display: block;
+  width: fit-content;
+  margin: 10px auto auto auto;
+}
