@@ -6,8 +6,6 @@ html {
 body {
   background-color: #efefef;
   font-family: TruenoSBd, Arial, Helvetica, sans-serif;
-  margin: 0;
-  margin-bottom: 30px;
 }
 
 h1,
@@ -30,47 +28,56 @@ h2 {
   text-align: center;
 }
 
-header .first-header {
+header {
   background-color: #0fa6df;
 }
 
 footer {
   text-align: center;
   background-color: #323232;
-  position: absolute;
-  bottom: 0;
-  width: calc(100% - 20px);
   padding: 10px;
-  height: 30px;
   color: white;
   margin: 0;
   font-size: 0.8em;
 }
 
+@media (orientation: landscape) {
+  body {
+    padding-bottom: 30px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+  }
+}
+
+@media (orientation: portrait) {
+  header img {
+      width: 310px;
+      height: 80px;
+  }
+}
+
 main.type-menu {
   background-color: #fff;
-  width: 60%;
-  margin: 3.5% auto;
+  margin: 20px auto;
   padding-top: 5px;
   border-radius: 10px;
 }
 
 main.topic-selection {
   background-color: #fff;
-  width: 80%;
-  margin: 3.5% auto;
+  margin: 20px auto;
   padding-top: 5px;
   border-radius: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .type-selection {
   padding: 20px 10px;
   display: inline-block;
-  width: calc(50% - 20px);
+  width: fit-content;
   text-align: center;
   transition-duration: 500ms;
 }
@@ -86,11 +93,13 @@ main.topic-selection {
 
 .type-selection:hover > img {
   transform: scale(1.2);
+  margin-top: 20px;
   transition-duration: 500ms;
 }
 
 .type-selection:hover > p {
   transform: scale(1.2);
+  margin-top: 20px;
   transition-duration: 500ms;
 }
 
@@ -101,15 +110,13 @@ a {
 
 .topic {
   width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10px;
   font-family: TruenoRg, Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
 .topic span {
+  display: block;
   margin-left: 10px;
   font-size: 1.2em;
   transition-duration: 500ms;
@@ -120,7 +127,7 @@ a {
 }
 
 .topic:hover > span {
-  transform: scale(1.1) translateX(15px);
+  transform: scale(1.1) translateY(5px);
   transition-duration: 500ms;
 }
 
@@ -132,5 +139,5 @@ a {
 .return-button {
   display: block;
   width: fit-content;
-  margin: 10px auto auto auto;
+  margin: 10px auto;
 }
